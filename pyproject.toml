@@ -47,6 +47,10 @@ lint.select = [
   "D",   # pydocstyle
   "PL",  # pylint-like
   "C90", # mccabe
+  "PERF", # performance
+  "RUF", # ruff-specific
+  "PTH", # pathlib
+  "FLY", # f-strings
 ]
 
 lint.ignore = []
