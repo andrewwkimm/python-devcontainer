@@ -22,5 +22,5 @@
       ]
     }
   },
-  "postCreateCommand": "make setup"
+  "postCreateCommand": "bash ./bootstrap.sh && make setup"
 }
