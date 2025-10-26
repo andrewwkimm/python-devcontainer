@@ -12,12 +12,12 @@ dependencies = []
 [dependency-groups]
 dev = [
     "coverage>=7.9.1",
-    "mypy>=1.16.1",
     "pre-commit>=4.3.0",
     "pytest>=8.4.1",
     "pytest-cov>=6.2.1",
     "pytest-mock>=3.14.1",
     "ruff>=0.12.0",
+    "ty>=0.0.1a24",
 ]
 
 [tool.coverage.run]
@@ -27,12 +27,6 @@ source = ["project_name"]
 [tool.coverage.report]
 show_missing = true
 fail_under = 50
-
-[tool.mypy]
-files = ["project_name", "tests"]
-cache_dir = "${HOME}/.mypy_cache"
-ignore_errors = false
-disallow_untyped_defs = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
